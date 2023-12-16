@@ -1,0 +1,10 @@
+#Creating shared volumes:
+docker volume create #og så udfyld
+
+docker run -d -p #DROPLET IP:8787 -e PASSWORD=#indsætkodeord --name rstudio1 -v rstudio_shared_vol:/home/rstudio rocker/rstudio
+
+#Containers in running state
+docker ps
+
+#Shared volumes listed
+docker volume ls
